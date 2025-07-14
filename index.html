@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>San Diego Top Spots</title>
+    <!-- this is where i begin to add the jquery to my script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Apply Comic Sans MS to all major text elements */
+        body, header, h1, h2, table, th, td, footer, a {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        body {
+            background-color: #c952a1;
+        }
+
+        /* this part is the header's picture */
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') left center no-repeat;
+            background-size: cover;
+            height: 200px;
+            color: rgb(145, 37, 167);
+            padding-top: 60px;
+            padding-left: 30px;
+        }
+
+        header h1 {
+            font-size: 5rem;
+            margin: 25px;
+        }
+
+        /* th = table headers and td = table data in each cell */
+        main h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+            margin-top: 1rem;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ccc;
+        }
+
+        a {
+            color: blue;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Write your markup here -->
 
-    <!-- Don't forget to add your <script> tag here -->
+    <header>
+        <h1>San Diego Top Spots</h1>
+    </header>
+
+    <main>
+        <h2>Top Tourist Spots</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name of the Area</th>
+                    <th>Description</th>
+                    <th>Open in Google Maps</th>
+                </tr>
+            </thead>
+            <tbody id="spot-table-body">
+                <!-- JavaScript fills this in -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        2025 San Diego Info Page
+    </footer>
+
+    <script src="main.js"></script>
 </body>
-
 </html>
